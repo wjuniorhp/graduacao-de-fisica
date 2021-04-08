@@ -1,0 +1,27 @@
+
+         eps = 1e-4
+         m = 0
+         somax = 0.0
+         somat = 0.0
+         soma = 0.0
+
+         do while (desvx.le.eps)
+           m = m + 1
+           print*, "Calculando ", m, "..."
+           call inercia(Ix,Iz,m)
+
+           print*, "Ix = ", Ix
+           print*, "Iz = ", Iz
+
+           somax = somax + Ix
+           mediax = somat/m
+           
+           somat = somat + mediax
+           media = somat/m
+           
+           soma = soma + mediax**2 + media**2
+           desv = (soma/m)**(0.5)
+           
+           print*, desv
+           
+         enddo
