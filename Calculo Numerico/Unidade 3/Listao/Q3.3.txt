@@ -1,0 +1,2 @@
+O segundo algoritmo mostrou-se mais rapido e chegou ao mesmo resultado exato. 
+Isso se deve ao fato de durante o método de Eliminação de Gauss, o algoritmo especializado não precisou passar por todos os pontos em todos os passos.
