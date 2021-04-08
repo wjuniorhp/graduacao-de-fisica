@@ -1,0 +1,8 @@
+METODOS PARA ACHAR ZEROS DE FUNÇAO:
+
+1)METODO DE BISSEÇÃO
+  criterio de convergencia --> f(a).f(b)<0
+  condiçao inicial --> xo ¨pertece a¨ [a,b]
+  xo = raiz da funçao
+  delta<=a-b --> criterio de parada
+  

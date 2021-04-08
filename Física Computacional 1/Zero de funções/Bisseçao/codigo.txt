@@ -1,0 +1,21 @@
+      program metodo_de_bissecao
+       real :: a=1., b=2., delta=1e-6, dx, xo, raiz, f
+       if(f(a)*f(b).lt.0)then
+        i=0
+        do while (abs(dx).ge.delta)
+         dx=b-a
+         xo=(a+b)/2
+         if(f(a)*f(xo).lt.0)then
+          b=xo
+         elseif(f(xo)*f(b).lt.0)then
+          a=xo
+         endif
+        enddo
+        print *, xo
+       endif
+      end program metodo_de_bissecao
+
+      real function f(x)
+       real x
+       f=exp(x)*log(x)-x**2
+      end function f
